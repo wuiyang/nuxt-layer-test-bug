@@ -7,6 +7,7 @@
     "dev": "nuxi dev",
     "start": "nuxi preview",
     "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "postinstall": "nuxi prepare",
     "test:preview": "npx vite preview --outDir test-reports/unit-test/ --host"
   },
