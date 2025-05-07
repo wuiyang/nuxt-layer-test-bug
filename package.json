@@ -6,13 +6,15 @@
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "nuxi preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "postinstall": "nuxi prepare"
   },
   "devDependencies": {
     "@nuxt/test-utils": "^3.17.2",
     "@vitest/coverage-v8": "^3.1.2",
     "@vitest/ui": "^3.1.2",
     "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^17.4.6",
     "nuxt": "^3.17.2",
     "vitest": "3.1.2",
     "vue": "3.5.13"
