@@ -6,19 +6,19 @@ import type {
 } from 'vitest/node';
 
 const reporters: InlineConfig['reporters'] = [
-  ['html', { outputFile: '../test-reports/unit-test/index.html' }],
+  ['html', { outputFile: './test-reports/unit-test/index.html' }],
 ];
 const coverage: CoverageOptions<'v8'> & { reporter: CoverageReporter[] } = {
   enabled: true,
   reporter: ['html'],
   provider: 'v8',
-  reportsDirectory: '../test-reports/coverage',
+  reportsDirectory: './test-reports/coverage',
 };
 
 if (process.env.CI === 'true') {
   reporters.push([
     'junit',
-    { outputFile: '../test-reports/unit-test/junit.xml' },
+    { outputFile: './test-reports/unit-test/junit.xml' },
   ]);
 
   // coverage
